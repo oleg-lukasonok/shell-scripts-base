@@ -13,9 +13,10 @@
 
 _base_localStorage_readLinesFrom_file() {
   local FUNCTION_NAME="_base_localStorage_readLinesFrom_file"
-  _loggers_debug "${FUNCTION_NAME}"
 
   local FILE_RELATIVE_PATH="${1}"
+
+  _loggers_debug "${FUNCTION_NAME}" "FILE_RELATIVE_PATH: ${FILE_RELATIVE_PATH}"
 
   _base_localStorage_ensureExistance_file "${FILE_RELATIVE_PATH}"
 
@@ -32,5 +33,5 @@ _base_localStorage_readLinesFrom_file() {
 
   done <"${FILE_RELATIVE_PATH}"
 
-  echo "${RET_VAL[*]}"
+  echo "${RET_VAL[!]}"
 }
