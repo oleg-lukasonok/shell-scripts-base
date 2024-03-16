@@ -27,6 +27,8 @@ _base_ensure_evnVar_localOSType() {
       _base_localStorage_readLinesFrom_file ".scripts/base/suggestions/os-types"
     )
 
+    echo "${LOCAL_OS_TYPES}"
+
     local TMP_LOCAL_OS_TYPE=""
 
     while

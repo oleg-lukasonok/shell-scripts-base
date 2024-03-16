@@ -27,8 +27,8 @@ _base_localStorage_ensureExistance_file() {
     [ ! -e "${FILE_RELATIVE_PATH}" ]
   then
     touch "${FILE_RELATIVE_PATH}"
-    _loggers_warnX "${FUNCTION_NAME}"
-    _loggers_warnX "${FUNCTION_NAME}" "Was absent -> had to create!"
-    _loggers_warnX "${FUNCTION_NAME}"
+    _loggers_warn "${FUNCTION_NAME}"
+    _loggers_warn "${FUNCTION_NAME}" "Was absent -> had to create!"
+    _loggers_warn "${FUNCTION_NAME}"
   fi
 }
