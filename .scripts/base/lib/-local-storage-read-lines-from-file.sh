@@ -33,5 +33,5 @@ _base_localStorage_readLinesFrom_file() {
 
   done <"${FILE_RELATIVE_PATH}"
 
-  echo "${RET_VAL[!]}"
+  echo "${RET_VAL[@]}"
 }
