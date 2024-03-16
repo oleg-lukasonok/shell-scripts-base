@@ -60,7 +60,7 @@ _base_ensure_evnVar_localOSType() {
         local ENV_VAR_KEY="LOCAL_OS_TYPE"
         local ENV_VAR_VALUE="${TMP_LOCAL_OS_TYPE}"
 
-        _base_localStorage_readLinesFrom_fileDotEnv
+        _base_localStorage_saveEnvVariable2_fileDotEnv
         break
       fi
     done
