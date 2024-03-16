@@ -11,7 +11,8 @@
 
 . ./.scripts/base/lib/-export-env-variables-from-file-dot-env.sh
 
-export LOCAL_OS_TYPE="darwin"
+. ./.scripts/base/lib/-ensure-env-var-local-os-type.sh
+
 export LOCAL_CPU_TYPE="amd64"
 export LOCAL_HOME_DIR=$(pwd)
 export LOCAL_FILE_DOT_ENV=".env"
@@ -44,3 +45,5 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 set -- "${ALL_ARGS[@]}"
+
+_base_ensure_evnVar_localOSType
